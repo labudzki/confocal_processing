@@ -1106,6 +1106,26 @@ files = [
 ]
 
 [[package]]
+name = "locomyco-imganalysis"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.12"
+groups = ["main"]
+files = []
+develop = false
+
+[package.dependencies]
+napari = ">=0.6.6,<0.7.0"
+numpy = ">=2.3.4,<3.0.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/labudzki/LOCOMYCO_ImgAnalysis.git"
+reference = "HEAD"
+resolved_reference = "72de97c118b502ecfaed1343d3675b7bde6724cb"
+
+[[package]]
 name = "magicgui"
 version = "0.10.1"
 description = "build GUIs from python types"
@@ -3508,4 +3528,4 @@ dev = ["pytest", "setuptools"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "fc8a35a487d5382c2fca8beb8a4f49204ddeab84d603777e54cd20005af8bb46"
+content-hash = "aeaf19ada0b6fc33974ed6ae11c7d0a95d6abae4825ce5157db64a6fe95e4d2d"

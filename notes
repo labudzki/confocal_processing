@@ -29,4 +29,23 @@ poetry
 poetry add ___ : adds a package to the environment and updates pyproject.toml
 poetry lock : generates or updates the poetry.lock file based on the pyproject.toml
 poetry install : installs the dependencies from the poetry.lock file into the virtual environment
-poetry shell : activates the virtual environment in a new shell
+poetry run python your_script.py : runs a python script within the virtual environment without activating the shell
+
+
+git commands:
+  - git status (check status of changes)
+  - git add . (add all changes)
+  - git add path/to/file.py (add specific file)
+  - git commit -m "message" (commit changes with message)
+  - git push origin main (push changes to remote repository on main branch)
+  - git commit --amend (amend last commit)
+  - git reset HEAD~1 (undo last commit, keep changes staged)
+  - git checkout -- path/to/file.py (discard changes in working directory for specific file)
+  - git pull origin main (pull latest changes from remote main branch)
+  - git pull 
+
+  Typical workflow:
+    - git pull origin main
+    - git add .
+    - git commit -m "descriptive message"
+    - git push origin main

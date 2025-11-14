@@ -2,7 +2,7 @@ import napari
 import numpy as np
 from tifffile import TiffFile
 from pathlib import Path
-#import utils.tifreading as u_tif
+from LOCOMYCO_ImgAnalysis import tifreading as u_tif
 
 fnum = 3
 
@@ -31,7 +31,3 @@ viewer.add_image(stack, name='Raw video', multiscale=False, axis_labels=['Time',
 napari.run()
 
 
-# # ✅ Cleanup after viewer closes
-# viewer.close()       # Close Napari viewer
-# del stack            # Delete stack variable
-# gc.collect()         # Force garbage collection
