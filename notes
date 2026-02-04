@@ -24,6 +24,9 @@ poetry lock : generates or updates the poetry.lock file based on the pyproject.t
 poetry install : installs the dependencies from the poetry.lock file into the virtual environment
 poetry run python your_script.py : runs a python script within the virtual environment without activating the shell
 
+create a new environment
+ poetry run python -m ipykernel install --user --name locomyco_env --display-name "LOCOMYCO_ImgAnalysis (Poetry)"
+
 
 git commands:
   - git status (check status of changes)
